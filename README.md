@@ -2,7 +2,6 @@
 
 Public static site for Niftysphere legal pages (GitHub Pages).
 
-**This repo is separate from the private `ZSH` monorepo.**
 
 ## Pages
 
