@@ -1,0 +1,125 @@
+:root {
+  --bg: #191919;
+  --text: rgba(255, 255, 255, 0.9);
+  --muted: rgba(255, 255, 255, 0.55);
+  --soft: rgba(255, 255, 255, 0.7);
+  --accent: #c9a227;
+  --border: rgba(255, 255, 255, 0.12);
+  --card: #242424;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+
+a {
+  color: var(--accent);
+}
+
+header,
+main,
+footer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem;
+}
+
+header {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  text-decoration: none;
+}
+
+nav {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.9rem;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin: 0 0 0.5rem;
+}
+
+h2 {
+  font-size: 1.15rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.meta {
+  color: var(--muted);
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.85rem;
+}
+
+p,
+li {
+  color: var(--soft);
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin: 1.25rem 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.card a {
+  display: block;
+  margin: 0.4rem 0;
+  font-size: 1.05rem;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.notice {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.9rem;
+  color: var(--muted);
+  border-left: 3px solid var(--accent);
+  padding-left: 0.85rem;
+  margin: 1.25rem 0;
+}
+
+footer {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.8rem;
+}
